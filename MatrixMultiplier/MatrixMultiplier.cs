@@ -20,7 +20,7 @@ public class MatrixMultiplier
         return sum;
     }
 
-    // Обычная матрица A (n x m) на B (m x k)
+    // Обычная матрица 
     public Matrix Multiply(
         Matrix a,
         Matrix b,
@@ -34,7 +34,7 @@ public class MatrixMultiplier
         return MultiplyRows(a.Values!, b, threads, distribution, chunk, showProgress, _ => 1);
     }
 
-    // Нижнетреугольная A (n x n, строка i хранит i + 1 элемент) на B (n x k)
+    // Нижнетреугольная 
     public Matrix Multiply(
         TriangleMatrix a,
         Matrix b,
@@ -65,8 +65,7 @@ public class MatrixMultiplier
         int rows = aRows.Length;
         int cols = b.Cols!.Value;
 
-        // Транспонирование идёт в одном потоке и входит в замер времени (разрешено заданием,
-        // но его нужно упомянуть в отчёте): так строки B лежат подряд в памяти.
+        // Транспонирование идёт в одном потоке и входит в замер времени, так строки B лежат подряд в памяти.
         long[][] bt = b.Transpose().Values!;
 
         long[][] result = new long[rows][];

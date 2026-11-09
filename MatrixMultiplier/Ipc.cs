@@ -31,7 +31,7 @@ public static class Generator
     private static int? ParseSeed(string s) =>
         s == "-" ? null : int.Parse(s, CultureInfo.InvariantCulture);
 
-    // Точка входа дочернего процесса: generate <n> <k> <seedA|-> <seedB|->
+    // Точка входа дочернего процесса
     public static int RunChild(string[] args)
     {
         if (args.Length < 5)
@@ -83,7 +83,6 @@ public static class GeneratorClient
             RedirectStandardOutput = true,
             CreateNoWindow = true
         };
-        // Если запущено как "dotnet Program.dll", нужно передать dll первым аргументом.
         if (Path.GetFileNameWithoutExtension(exe).Equals("dotnet", StringComparison.OrdinalIgnoreCase))
             psi.ArgumentList.Add(Environment.GetCommandLineArgs()[0]);
         psi.ArgumentList.Add("generate");

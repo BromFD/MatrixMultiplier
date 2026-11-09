@@ -26,7 +26,7 @@ public class Run
             .Distinct().OrderBy(x => x).ToArray();
     }
 
-    // ---------- Задание на «3»: обычные матрицы ----------
+    // Задание на «3»: обычные матрицы
 
     public static void Test()
     {
@@ -56,7 +56,7 @@ public class Run
         Console.WriteLine($"Матрица посчиталась за {Ms(stopwatch.Elapsed.TotalMilliseconds)} мс");
     }
 
-    // ---------- Задание на «4»: треугольная A, генератор в отдельном процессе ----------
+    // Задание на «4»: треугольная A, генератор в отдельном процессе
 
     public static void TestTriangle()
     {
@@ -87,7 +87,7 @@ public class Run
         Console.WriteLine($"Умножение: {Ms(stopwatch.Elapsed.TotalMilliseconds)} мс");
     }
 
-    // ---------- Проверка корректности на малых данных ----------
+    // Проверка корректности на малых данных 
 
     private static long[][] Naive(long[][] a, long[][] b)
     {
@@ -144,9 +144,7 @@ public class Run
         Console.WriteLine(ok ? "Все проверки пройдены." : "ЕСТЬ ОШИБКИ!");
     }
 
-    // ---------- Сбор статистики ----------
-    // Подберите sizes так, чтобы однопоточное умножение самого большого размера
-    // занимало 10–20 секунд. Запускайте в Release, не в VM, от сети.
+    // Сбор статистики 
 
     public static void CollectStatsDense(string path = "results_dense.csv")
     {
@@ -185,7 +183,6 @@ public class Run
     {
         int[] sizes = { 500, 1500, 3800 };
         int[] threadCounts = ThreadCounts();
-        // Добавьте (Distribution.Dynamic, 8), (Distribution.Dynamic, 64) для сравнения порций
         var variants = new (Distribution, int)[]
         {
             (Distribution.Static, 0), (Distribution.Dynamic, 1)
@@ -202,8 +199,6 @@ public class Run
 
         for (int i = 0; i < sizes.Length; i++)
         {
-            // Для замеров умножения матрицы генерируются в этом же процессе:
-            // время генерации и передачи в замер не входит (передача измеряется отдельно).
             var a = new TriangleMatrix(); a.GenerateMatrix(sizes[i], 0, 10, i);
             var b = new Matrix(); b.GenerateMatrix(sizes[i], sizes[i], 0, 10, i + 1);
             long expectedSum = -1;

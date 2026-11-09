@@ -6,7 +6,7 @@ class Program
 {
     static int Main(string[] args)
     {
-        // Режим дочернего процесса-генератора: <exe> generate <n> <k> <seedA|-> <seedB|->
+        // Режим дочернего процесса-генератора
         if (args.Length > 0 && args[0] == "generate")
             return Generator.RunChild(args);
 
