@@ -1,0 +1,5 @@
+/home/brom/RiderProjects/MatrixMultiplier/MatrixMultiplier/bin/Release/net10.0/publish/MatrixMultiplier
+/home/brom/RiderProjects/MatrixMultiplier/MatrixMultiplier/bin/Release/net10.0/publish/MatrixMultiplier.dll
+/home/brom/RiderProjects/MatrixMultiplier/MatrixMultiplier/bin/Release/net10.0/publish/MatrixMultiplier.deps.json
+/home/brom/RiderProjects/MatrixMultiplier/MatrixMultiplier/bin/Release/net10.0/publish/MatrixMultiplier.runtimeconfig.json
+/home/brom/RiderProjects/MatrixMultiplier/MatrixMultiplier/bin/Release/net10.0/publish/MatrixMultiplier.pdb

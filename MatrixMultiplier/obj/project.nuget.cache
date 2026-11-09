@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "3jTAiD5Fs18=",
+  "success": true,
+  "projectFilePath": "/home/brom/RiderProjects/MatrixMultiplier/MatrixMultiplier/MatrixMultiplier.csproj",
+  "expectedPackageFiles": [
+    "/home/brom/.nuget/packages/microsoft.aspnetcore.app.ref/10.0.13/microsoft.aspnetcore.app.ref.10.0.13.nupkg.sha512"
+  ],
+  "logs": []
+}

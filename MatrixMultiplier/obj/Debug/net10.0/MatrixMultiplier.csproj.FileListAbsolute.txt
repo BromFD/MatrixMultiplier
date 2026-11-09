@@ -1,0 +1,14 @@
+/home/brom/RiderProjects/MatrixMultiplier/MatrixMultiplier/bin/Debug/net10.0/MatrixMultiplier
+/home/brom/RiderProjects/MatrixMultiplier/MatrixMultiplier/bin/Debug/net10.0/MatrixMultiplier.deps.json
+/home/brom/RiderProjects/MatrixMultiplier/MatrixMultiplier/bin/Debug/net10.0/MatrixMultiplier.runtimeconfig.json
+/home/brom/RiderProjects/MatrixMultiplier/MatrixMultiplier/bin/Debug/net10.0/MatrixMultiplier.dll
+/home/brom/RiderProjects/MatrixMultiplier/MatrixMultiplier/bin/Debug/net10.0/MatrixMultiplier.pdb
+/home/brom/RiderProjects/MatrixMultiplier/MatrixMultiplier/obj/Debug/net10.0/MatrixMultiplier.GeneratedMSBuildEditorConfig.editorconfig
+/home/brom/RiderProjects/MatrixMultiplier/MatrixMultiplier/obj/Debug/net10.0/MatrixMultiplier.AssemblyInfoInputs.cache
+/home/brom/RiderProjects/MatrixMultiplier/MatrixMultiplier/obj/Debug/net10.0/MatrixMultiplier.AssemblyInfo.cs
+/home/brom/RiderProjects/MatrixMultiplier/MatrixMultiplier/obj/Debug/net10.0/MatrixMultiplier.csproj.CoreCompileInputs.cache
+/home/brom/RiderProjects/MatrixMultiplier/MatrixMultiplier/obj/Debug/net10.0/MatrixMultiplier.dll
+/home/brom/RiderProjects/MatrixMultiplier/MatrixMultiplier/obj/Debug/net10.0/refint/MatrixMultiplier.dll
+/home/brom/RiderProjects/MatrixMultiplier/MatrixMultiplier/obj/Debug/net10.0/MatrixMultiplier.pdb
+/home/brom/RiderProjects/MatrixMultiplier/MatrixMultiplier/obj/Debug/net10.0/MatrixMultiplier.genruntimeconfig.cache
+/home/brom/RiderProjects/MatrixMultiplier/MatrixMultiplier/obj/Debug/net10.0/ref/MatrixMultiplier.dll
